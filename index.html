@@ -2,76 +2,45 @@
 
 <html lang="en">
 
-    <head>
+<head>
 
-        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
-        <meta charset="utf-8"/>
-        <meta content="initial-scale=1, width=device-width" name="viewport"/>
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+  <meta charset="utf-8"/>
+  <meta content="initial-scale=1, width=device-width" name="viewport"/>
  
-        <!-- internal stylesheet -->
-        <link href="styles.css" rel="stylesheet"/>
+  <!-- internal stylesheet -->
+  <link href="styles.css" rel="stylesheet"/>
         
-        <!-- google font links -->
-        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+  <!-- google font links -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
         
-        <!-- font-awesome links -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
+  <!-- font-awesome links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
 
-    </head>
-    <body>
-        <nav class="col-xs-12">
+</head>
+<body>
+  <nav class="col-xs-12">
     
-            <div id="logo-tagline" class="col-xs-12 col-sm-6">  
-                <h1>Forever Flowers</h1>
-                <hr>
-                <h3>Custom Creations Handmade To Order</h3>
-            </div>
-            <div id="nav-buttons" class="col-xs-12 col-sm-6">  
-                <a href="#" id="about-btn" class="col-xs-4">About</a>
-                <a href="#" id="products-btn" class="col-xs-4">Products</a>
-                <a href="#" id="contact-btn" class="col-xs-4">Contact</a>
-            </div>
-
-        </nav>
-        <div id="home"></div>
-        <div id="products"></div>
+    <div id="logo-tagline" class="col-xs-12 col-sm-6">  
+      <h1>Forever Flowers</h1>
+    </div>
+    <div id="nav-buttons" class="col-xs-12 col-sm-6">  
+      <a href="#" id="about-btn" class="col-xs-4">About</a>
+      <a href="#" id="products-btn" class="col-xs-4">Products</a>
+      <a href="#" id="contact-btn" class="col-xs-4">Contact</a>
+    </div>
+  </nav>
+  
+  <div class="slideshow-container col-sm-6">
+    <img src="images/rose.jpg" class="slide">
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+  <div id="home"></div>
+  <div id="products"></div>
 
      
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="images/rose.jpg">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="images/poinsettia.jpg">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="images/lily.jpg">
-  </div>
-  
-  <div class="mySlides fade">
-    <img src="images/daffodil.jpg">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="images/bouquet.jpg">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-
-</div>   
 
 
 
@@ -116,8 +85,7 @@
  
         <!-- internal script file -->
         <script src="scripts.js"></script>
-        <script src="slides.js"></script>
-  
+
     </body>
     
 </html>
