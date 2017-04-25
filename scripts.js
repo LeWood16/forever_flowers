@@ -13,11 +13,6 @@ var imgSources = [
 
 
 
-
-$(document).ready(function(){
-   $(".info").hide(); 
-});
-
 $("#portfolio-btn").click(function() {
     $('html,body').animate({
         scrollTop: $("#portfolio").offset().top},
