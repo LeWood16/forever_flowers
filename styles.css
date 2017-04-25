@@ -7,7 +7,7 @@ body {
 nav {
     font-family: Arial;
     width: 100%;
-    background: #00a;
+    background: #006;
     color: #FFF;
     font-weight: 900;
 }
@@ -32,13 +32,13 @@ h3{
   
   display: inline-block;
   color: #FFF;
-  background: #00a;
+  background: #006;
   text-align: center;
   text-decoration: none;
   font-size: 1em;
   line-height: 60px;
   font-family: 'Cinzel Decorative', cursive;
-
+  z-index: 100;
 }
 
 #contact-container {
@@ -63,6 +63,7 @@ h3{
   display: inline-block;
   border: 5px solid white;
   line-height: 50px;
+  
 }
 
 
@@ -108,14 +109,10 @@ a, a:hover{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-.mySlides {
-    display: none;
-}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -126,6 +123,8 @@ a, a:hover{
   margin-top: -22px;
   padding: 16px;
   color: white;
+  background: #00F;
+  opacity: 0.4;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -138,30 +137,20 @@ a, a:hover{
   border-radius: 3px 0 0 3px;
 }
 
+.prev{
+  left: 0;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  text-decoration: none;
 }
 
 img {
   width: 100%;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {

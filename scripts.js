@@ -2,6 +2,17 @@
 
 // this file handles all the page's animations
 
+var slide = 0;
+
+var imgSources = [
+    "images/rose.jpg",
+    "images/poinsettia.jpg",
+    "images/lily.jpg",
+    "images/daffodil.jpg"
+    ];
+
+
+
 
 $(document).ready(function(){
    $(".info").hide(); 
@@ -32,3 +43,16 @@ $(".projects > a").hover(function(){
     $(this).children().fadeOut(); 
     $(this).animate({ width: "250px", height: "250px" });
 });       
+
+
+$(".next").click(function(){
+    slide++;
+    if (slide > 3) slide = 0;
+    $(".slideshow-container > img").attr("src", imgSources[slide]);
+})
+;
+$(".prev").click(function(){
+    slide--;
+    if (slide < 0) slide = 3;
+    $(".slideshow-container > img").attr("src", imgSources[slide]);
+});
