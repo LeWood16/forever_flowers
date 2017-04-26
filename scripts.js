@@ -3,6 +3,9 @@
 // this file handles all the page's animations
 var autoSlide = setInterval(function(){ nextSlide() }, 5000);
 
+// images in slideshow don't switch fast 
+// enough; image changes before fadein;
+// this needs to be fixed before anything else;
 
 var slide = 0;
 
@@ -15,9 +18,9 @@ var imgSources = [
 
 
 
-$("#portfolio-btn").click(function() {
+$("#products-btn").click(function() {
     $('html,body').animate({
-        scrollTop: $("#portfolio").offset().top},
+        scrollTop: $("#products").offset().top},
         'slow');
 });
 

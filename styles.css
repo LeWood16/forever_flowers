@@ -2,10 +2,14 @@ body {
   font-size: 17px; 
   font-weight: 900;
   font-family: 'Lato', sans-serif;
-  background-color: #F00;
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+.bg{
+    background-color: #001dd6;
+  background-image: url("images/fabric-plaid.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+}
 
 
 nav {
