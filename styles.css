@@ -39,6 +39,7 @@ h3{
   line-height: 60px;
   font-family: 'Cinzel Decorative', cursive;
   z-index: 100;
+  -webkit-transition:all .4s ease-in;
 }
 
 #contact-container {

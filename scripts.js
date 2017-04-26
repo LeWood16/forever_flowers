@@ -1,6 +1,8 @@
 /* global $ */
 
 // this file handles all the page's animations
+var autoSlide = setInterval(function(){ nextSlide() }, 5000);
+
 
 var slide = 0;
 
@@ -40,14 +42,24 @@ $(".projects > a").hover(function(){
 });       
 
 
-$(".next").click(function(){
-    slide++;
-    if (slide > 3) slide = 0;
-    $(".slideshow-container > img").attr("src", imgSources[slide]);
-})
-;
+function nextSlide(){
+   slide++;
+   if (slide > 3) slide = 0;
+   $(".slideshow-container > img").hide().attr("src", imgSources[slide]).fadeIn("slow");
+}
+
+$(".next").click(nextSlide);
+
 $(".prev").click(function(){
     slide--;
     if (slide < 0) slide = 3;
-    $(".slideshow-container > img").attr("src", imgSources[slide]);
+    $(".slideshow-container > img").hide().attr("src", imgSources[slide]).fadeIn("slow");
 });
+
+$(".slideshow-container").hover(function(){
+    clearInterval(autoSlide)
+}, function(){
+    autoSlide = setInterval(function(){ nextSlide() }, 5000)
+    }
+);
+  // .mouseleave( intervalID = setInterval(function(){ nextSlide() }, 5000));
