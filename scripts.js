@@ -65,4 +65,12 @@ $(".slideshow-container").hover(function(){
     autoSlide = setInterval(function(){ nextSlide() }, 5000)
     }
 );
+
+$(".next").click(function(){
+    clearInterval(autoSlide);
+});
+
+$(".prev").click(function(){
+    clearInterval(autoSlide);
+});
   // .mouseleave( intervalID = setInterval(function(){ nextSlide() }, 5000));
