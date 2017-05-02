@@ -22,10 +22,14 @@
      margin-bottom: 30px;
  }
  .jumbotron {
-     background-color: #006;
      color: #fff;
      padding: 100px 25px;
      font-family: Montserrat, sans-serif;
+ }
+ .bouquet-bg{
+     background-image: url('../images/rose.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
  }
  .container-fluid {
      padding: 60px 50px;
@@ -34,11 +38,11 @@
      background-color: #f6f6f6;
  }
  .logo-small {
-     color: #f4511e;
+     color: #006;
      font-size: 50px;
  }
  .logo {
-     color: #f4511e;
+     color: #006;
      font-size: 200px;
  }
  .thumbnail {
@@ -75,7 +79,7 @@
 
  .navbar {
      margin-bottom: 0;
-     background-color: #006;
+     background: #006;
      z-index: 9999;
      border: 0;
      font-size: 12px !important;
@@ -141,6 +145,20 @@
      .logo {
          font-size: 150px;
      }
+ }
+ 
+ .glyphicon-home{
+     color: #FFF;
+ }
+ 
+ .baby-icon{
+     width: 150px;
+     height: 150px;
+     background: url('../images/pink_babyclothes.jpg') no-repeat;
+     background-size: cover;
+     background-position: -60px 0px;
+     border-radius: 100px;
+     margin: 0 auto;
  }
  
  /* Fading animation */
