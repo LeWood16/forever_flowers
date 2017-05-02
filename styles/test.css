@@ -104,6 +104,10 @@
  .slideanim {
      visibility: hidden;
  }
+ 
+ .glyphicon-chevron-left, .glyphicon-chevron-right, .blue {
+     color: #006;
+ }
  .slide {
      animation-name: slide;
      -webkit-animation-name: slide;

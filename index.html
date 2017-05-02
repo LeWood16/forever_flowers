@@ -1,36 +1,60 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
-    <meta charset="utf-8" />
-    <meta content="initial-scale=1, width=device-width" name="viewport" />
-
+  <title>Forever Flowers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <!-- google font links -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
 
     <!-- font-awesome links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles/test.css">
 </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<body>
-    <div class='container-fluid bg'>
-        <nav class="col-xs-12">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><span class="glyphicon glyphicon-home"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#products">PRODUCTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-            <div id="logo-tagline" class="col-xs-12 col-sm-6">
-                <h1>Debbie's Den</h1>
-            </div>
-            <div id="nav-buttons" class="col-xs-12 col-sm-6">
-                <a href="#" id="about-btn" class="col-xs-4">About</a>
-                <a href="#" id="products-btn" class="col-xs-4">Products</a>
-                <a href="#" id="contact-btn" class="col-xs-4">Contact</a>
-            </div>
-        </nav>
-        <div class="slideshow-container col-sm-6">
+<div class="jumbotron text-center bouquet-bg">
+
+  <h1>Debbie's Den</h1> 
+  <p>Handcrafted gifts and trinkets</p> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Debbie's Den</h2>
+      <h4>Quite a few items get crocheted here at Debbie's Den. Doilies, baby clothes, and custom hats to name a few. But we specialize in handmade bouquets of crocheted flowers.</h4>
+      <h4>We think giving that special someone a bouquet of all their favorite flowers, a bouquet that will stay just the way you gave it, is quite a special gift. Over thirty years of crocheting experience is put into hand-making each and every flower.</h4>
+    </div>
+    <div class="col-sm-4">
+        <div class="slideshow-container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -72,98 +96,104 @@
             </div>
 
         </div>
-        <div id="home" class=" col-sm 6">
-            <h3>About us</h3>
-            <p>Quite a few items get crocheted here at Forever Flowers. Doilies, baby clothes, and custom hats to name a few. But we specialize in handmade bouquets of crocheted flowers.
-            </p>
-
-            <p>We do mean forever! We think that giving that special someone a bouquet of all their favorite flowers, a bouquet that they can keep forever, is quite a special gift. Over thirty years of crocheting experience is put into making each and every flower, all made by hand.
-            </p>
-        </div>
-        <div id="products" class="col-xs-12">
-          <h3> Product div</h3>
-        </div>
-
-<div id="contact" class="email-form-container">
-  <form id="contact-form" method="post" action="https://formspree.io/lewoodwebdev@gmail.com" role="form">
-
-    <div class="messages"></div>
-
-    <div class="controls">
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <div class="form-group">
-                    <label for="form_name">Firstname *</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-                <div class="form-group">
-                    <label for="form_lastname">Lastname *</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="form_phone">Phone</label>
-                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <input type="submit" class="btn btn-success btn-send" value="Send message">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
-            </div>
-        </div>
     </div>
-
-</form>
+  </div>
 </div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission is to provide quality, custom, handcrafted products to people who appreciate items made just for them. Receiving a gift made specially for you is a wonderful feeling.</h4><br>
+      <h4><strong>VISION:</strong> Our products aren't for everyone.  Far from just another stock greeting card on a shelf, or a standard bouquet from a big-box store, our products aren't made in a factory half the world away. They're made entirely by hand, in a tiny town in Northern Michigan.</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="products" class="container-fluid text-center">
+  <h2>PRODUCTS</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <div class="baby-icon"></div>
+      <h4>BABY ACCESSORIES</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>HATS</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>DOILIES</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>FLOWERS</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
     </div>
 
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
 
-
-    <!-- internal stylesheet -->
-    <link href="styles/minified-styles.css" rel="stylesheet" />
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- internal script file -->
-    <script src="scripts/animations-min.js"></script>
-
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Our site's ordering section is still being built! Send us a message here and we'll get back to you as soon as possible.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Rudyard, MI</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top" id="footer-link">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+<script src="scripts/test.js"></script>
 
 </body>
-
 </html>
