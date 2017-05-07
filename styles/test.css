@@ -21,6 +21,41 @@
      font-weight: 400;
      margin-bottom: 30px;
  }
+ .baby-icon{
+     background: url('../images/baby.jpg') no-repeat -30px 0px;
+     width: 150px;
+     height: 150px;
+     border-radius: 100px;
+     margin: 0 auto;
+ }
+ .pikachu-icon{
+      background: url('../images/pikachu.jpg') no-repeat -10px 0px;
+     width: 150px;
+     height: 150px;
+     border-radius: 100px;
+     margin: 0 auto;   
+ }
+  .mask-icon{
+      background: url('../images/cthulhu.jpg') no-repeat;
+     width: 150px;
+     height: 150px;
+     border-radius: 100px;
+     margin: 0 auto;   
+ }
+  .flower-icon{
+      background: url('../images/flower-icon.jpg') no-repeat;
+     width: 150px;
+     height: 150px;
+     border-radius: 100px;
+     margin: 0 auto;   
+ }
+   .doily-icon{
+      background: url('../images/doily.jpg') no-repeat;
+     width: 150px;
+     height: 150px;
+     border-radius: 100px;
+     margin: 0 auto;   
+ }
  .jumbotron {
      color: #fff;
      padding: 100px 25px;
@@ -37,6 +72,11 @@
  .bg-grey {
      background-color: #f6f6f6;
  }
+ .bg {
+    background-color: #006;
+    background-image: url("../images/fabric-plaid.png");
+}
+ 
  .logo-small {
      color: #006;
      font-size: 50px;
@@ -153,16 +193,6 @@
  
  .glyphicon-home{
      color: #FFF;
- }
- 
- .baby-icon{
-     width: 150px;
-     height: 150px;
-     background: url('../images/pink_babyclothes.jpg') no-repeat;
-     background-size: cover;
-     background-position: -60px 0px;
-     border-radius: 100px;
-     margin: 0 auto;
  }
  
  /* Fading animation */
