@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/mobile.css">
   <link rel="stylesheet" href="styles/tablet.css">
+  <link rel="stylesheet" href="styles/desktop.css">
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -30,7 +32,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"><span class="glyphicon glyphicon-home"></span></a>
+      <a class="navbar-brand dd-logo" href="#myPage"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -42,21 +44,7 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center plaid-bg">
-
-  <h1>Debbie's Den</h1> 
-  <p>Handcrafted gifts and trinkets</p> 
-</div>
-
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2 class="scale-font">About Debbie's Den</h2>
-      <h4>Quite a few items get crocheted here at Debbie's Den. Doilies, baby clothes, and custom hats to name a few. But we specialize in handmade bouquets of crocheted flowers.</h4>
-      <h4>We think giving that special someone a bouquet of all their favorite flowers, a bouquet that will stay just the way you gave it, is quite a special gift. Over thirty years of crocheting experience is put into hand-making each and every flower.</h4>
-    </div>
-    <div class="col-sm-4">
+<div class="jumbotron">
         <div class="slideshow-container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -70,12 +58,12 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="images/rose.jpg" alt="roses" style="width:100%;">
+                        <img src="images/blue.jpg" alt="roses" style="width:100%;">
                     </div>
-
                     <div class="item">
-                        <img src="images/daffodil.jpg" alt="daffodils" style="width:100%;">
+                        <img src="images/baby-slider.jpg" alt="daffodils" style="width:100%;">
                     </div>
+<!--
 
                     <div class="item">
                         <img src="images/poinsettia.jpg" alt="poinsettia" style="width:100%;">
@@ -84,6 +72,8 @@
                     <div class="item">
                         <img src="images/lily.jpg" alt="lilies" style="width:100%;">
                     </div>
+                    
+-->
 
                 </div>
 
@@ -99,15 +89,24 @@
             </div>
 
         </div>
+ 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 class="scale-font">About Debbie's Den</h2>
+      <h4>Quite a few items get crocheted here at Debbie's Den. Doilies, baby clothes, and custom hats to name a few. But we specialize in handmade bouquets of crocheted flowers.</h4>
+      <h4>We think giving that special someone a bouquet of all their favorite flowers, a bouquet that will stay just the way you gave it, is quite a special gift. Over thirty years of crocheting experience is put into hand-making each and every flower.</h4>
+    </div>
+    <div class="col-sm-4">
     </div>
   </div>
 </div>
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
     <div class="col-sm-8">
       <h2>Our Values</h2><br>
       <h4><strong>MISSION:</strong> Our mission is to provide quality, custom, handcrafted products to people who appreciate items made just for them. Receiving a gift made specially for you is a wonderful feeling.</h4><br>
@@ -121,27 +120,27 @@
   <h2>PRODUCTS</h2>
   <br>
   <div class="row slideanim">
-    <div class="col-sm-4">
+    <div class="col-sm-4 icon-holder">
       <div class="baby-icon"></div>
       <h4>BABY ACCESSORIES</h4>
       <p>baby-sized blankets, hats, gloves and more</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 icon-holder">
       <div class="mask-icon"></div>
       <h4>HATS</h4>
       <p>custom winter hats and masks</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 icon-holder">
       <div class="doily-icon"></div>
       <h4>DOILIES</h4>
       <p>spruce up any surface with a custom doily</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 icon-holder">
       <div class="flower-icon"></div>
       <h4>FLOWERS</h4>
       <p>any custom arrangement for your special someone</p>
     </div>
-   <div class="col-sm-4">
+   <div class="col-sm-4 icon-holder">
       <div class="pikachu-icon"></div>
       <h4>MORE</h4>
       <p>we are open to suggestions for new products, so long as 
@@ -185,7 +184,7 @@
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
 </footer>
-
+<script src="scripts/animations.js"></script>
 <script src="scripts/test.js"></script>
 </body>
 </html>

@@ -1,5 +1,35 @@
 /*
 
+-bug:
+    -when you click any button in the navbar, the margin-top
+    setting of the jumbotron class is reset to zero
+    this should be a quick monkey-patch but it isn't:
+        $(".jumbotron").css("margin-top", 69);
+
+
+
+
+-convert banner to hd image slideshow 
+    X-put at least two hd pictures in slider
+    X-make slider full width of screen on any screensize
+    -put links in captions (link to "lookbook" like on tankfarm site)
+    
+-make lookbook of flowers
+    -lookbook should end with Britt's bouquet of white roses
+    
+X-put "Debbie's Den" in a logo, and put logo in navbar
+
+
+-a dozen white roses (my fiancee's favorite), with two-tone leaves and stems of
+all three of her favorite colors, (green, blue and pink)
+
+---  <p>Handcrafted gifts and trinkets</p> 
+
+
+
+
+
+
 
 -make site responsive (make 'about' and 'products' sections 
 scale larger at larger screensizes like top banner does)

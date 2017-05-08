@@ -22,42 +22,7 @@
      font-weight: 400;
      margin-bottom: 30px;
  }
- .baby-icon{
-     background: url('../images/baby.jpg') no-repeat -30px 0px;
-     width: 150px;
-     height: 150px;
-     border-radius: 100px;
-     margin: 0 auto;
- }
- .pikachu-icon{
-      background: url('../images/pikachu.jpg') no-repeat -10px 0px;
-     width: 150px;
-     height: 150px;
-     border-radius: 100px;
-     margin: 0 auto;   
- }
-  .mask-icon{
-      background: url('../images/cthulhu.jpg') no-repeat;
-     width: 150px;
-     height: 150px;
-     border-radius: 100px;
-     margin: 0 auto;   
- }
-  .flower-icon{
-      background: url('../images/flower-icon.jpg') no-repeat;
-     width: 150px;
-     height: 150px;
-     border-radius: 100px;
-     margin: 0 auto;   
- }
-   .doily-icon{
-      background: url('../images/doily.jpg') no-repeat;
-     width: 150px;
-     height: 150px;
-     border-radius: 100px;
-     margin: 0 auto;   
- }
- .jumbotron {
+  .jumbotron {
      color: #fff;
      padding: 100px 25px;
      font-family: Montserrat, sans-serif;
@@ -84,17 +49,6 @@
      font-size: 200px;
  }
  
- .carousel-control.right,
- .carousel-control.left {
-     background-image: none;
-     color: #f4511e;
- }
- .carousel-indicators li {
-     border-color: #f4511e;
- }
- .carousel-indicators li.active {
-     background-color: #f4511e;
- }
  .item h4 {
      font-size: 19px;
      line-height: 1.375em;
@@ -108,67 +62,3 @@
  }
  
  
- @keyframes slide {
-     0% {
-         opacity: 0;
-         transform: translateY(70%);
-     }
-     100% {
-         opacity: 1;
-         transform: translateY(0%);
-     }
- }
- @-webkit-keyframes slide {
-     0% {
-         opacity: 0;
-         -webkit-transform: translateY(70%);
-     }
-     100% {
-         opacity: 1;
-         -webkit-transform: translateY(0%);
-     }
- }
- @media screen and (max-width: 768px) {
-     .col-sm-4 {
-         text-align: center;
-         margin: 25px 0;
-     }
-     .btn-lg {
-         width: 100%;
-         margin-bottom: 35px;
-     }
- }
- @media screen and (max-width: 480px) {
-     .logo {
-         font-size: 150px;
-     }
- }
- 
- .glyphicon-home{
-     color: #FFF;
- }
- 
- /* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
