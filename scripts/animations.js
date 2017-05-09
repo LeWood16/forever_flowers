@@ -1,5 +1,13 @@
 /* global $ */
+$(document).ready(function(){
+   $(".info").hide(); 
+});
 
+$("#category-container > a").hover(function(){
+    $(this).children().fadeIn(); 
+}, function() {
+    $(this).children().fadeOut(); 
+}); 
 
 $("#products-btn").click(function() {
     $('html,body').animate({
@@ -18,12 +26,5 @@ $("#contact-btn").click(function() {
         scrollTop: $("#contact").offset().top},
         'slow');
 });
-
-$(".projects > a").hover(function(){
-    $(this).filter(':not(:animated)').animate({ width: "275px", height: "275px" });
-    $(this).children().fadeIn(); 
-}, function() {
-    $(this).children().fadeOut(); 
-    $(this).animate({ width: "250px", height: "250px" });
-});       
+       
 

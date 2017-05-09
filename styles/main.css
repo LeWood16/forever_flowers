@@ -83,22 +83,50 @@
      border-radius: 100px;
      margin: 0 auto;
  }
- .baby-icon{
-     background: url('../images/baby.jpg') no-repeat -30px 0px;
+ 
+ #category-container{
+     width: 100%;
  }
- .pikachu-icon{
-     background: url('../images/pikachu.jpg') no-repeat -10px 0px;
+ a > h4{
+     color: #006;
+     text-decoration: none;
+     font-size: 2em;
  }
-  .mask-icon{
-     background: url('../images/cthulhu.jpg') no-repeat;
-  
+ a:hover{
+     text-decoration: none;
  }
-  .flower-icon{
-     background: url('../images/flower-icon.jpg') no-repeat;
+
+#products{
+    padding: 0px;
+    padding-top: 60px;
+}
+ .info {
+  background: #000;
+  color: #fff;
+  min-height: 300px;
+  min-width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+}
+ #category-container > a{
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
  }
-   .doily-icon{
-     background: url('../images/doily.jpg') no-repeat;
- }
+
+#flowers-link{
+    background: url("../images/rose.jpg");
+}
+#babies-link{
+    background: url("../images/baby.jpg");
+}
+#hats-link{
+    background: url("../images/cthulhu.jpg");
+}
+#more-link{
+    background: url("../images/pikachu.jpg");
+}
  
  .jumbotron {
      margin-top: 69px !important;
@@ -137,15 +165,32 @@
      font-style: normal;
  }
  
- .dd-logo{
-     height: 50px;
+.dd-logo{
+     height: 55px;
      width: 200px;
      background: url('../images/dd_logo.jpg') no-repeat;
      background-size: cover;
-
+     border-radius: 15px;
  }
  
+ 
+ @media screen and (min-width: 600px) {
+.scale-h2{
+    font-size: 3.5em;
+}
 
+.scale-h4{
+    font-size: 2em;
+}
+
+.icon-holder > h4{
+    font-size: 2em
+}
+.icon-holder > p{
+    font-size: 1.3em;
+}
+
+}
  @keyframes slide {
      0% {
          opacity: 0;

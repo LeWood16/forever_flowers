@@ -1,11 +1,47 @@
 /*
 
+
+X-make div for each category
+    -col-xs-12 col-sm-6 for each div 
+        (covers full-width of page)
+    -make sure there are six categories or at least 
+    three and one "custom" category
+
+-get font working in product hover and hover-off
+
+
+
+
+-make breakpoints with media queries to make the 
+text sections responsive
+    X-about us
+    X-our values
+    -add captions to the pictures in the slideshow
+
+-create a product page (front-end) with:
+    -picture
+    -name
+    -price
+    -time to make
+for each product
+
+EXTRAS:
+    -each product category link can link to a lookbook for
+    that category
+
+
 -bug:
     -when you click any button in the navbar, the margin-top
     setting of the jumbotron class is reset to zero
     this should be a quick monkey-patch but it isn't:
         $(".jumbotron").css("margin-top", 69);
-
+    - scratch that; there is no bug, at least not in desktop version; 
+    the bug is that the navbar needs to be wider, the logo isn't showing up
+    at all;
+    -UPDATE: the logo doesn't show up occasionally; this could just be a loading
+    issue; cache all the files in your browser when you finalize the site, that 
+    should take care of it
+    ---look up how to cache files, make a Feynman sheet on it
 
 
 
