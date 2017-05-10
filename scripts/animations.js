@@ -1,12 +1,12 @@
 /* global $ */
 $(document).ready(function(){
-   $(".info").hide(); 
+  $(".info").hide(); 
 });
 
 $("#category-container > a").hover(function(){
-    $(this).children().fadeIn(); 
+    $(this).children(".info").slideDown(); 
 }, function() {
-    $(this).children().fadeOut(); 
+    $(this).children(".info").slideUp(); 
 }); 
 
 $("#products-btn").click(function() {
